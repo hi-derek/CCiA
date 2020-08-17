@@ -1,4 +1,7 @@
 #include <thread>
+#include <iostream>
+
+using namespace std;
 
 void do_something(int& i)
 {
@@ -17,6 +20,7 @@ struct func
         {
             do_something(i);
         }
+        cout<<"func() done"<<endl;
     }
 };
 
@@ -32,4 +36,5 @@ void oops()
 int main()
 {
     oops();
+    cout<<"oops() done."<<endl;
 }

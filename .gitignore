@@ -30,3 +30,12 @@
 
 # Build directory
 build/*
+
+
+bin/*
+lib/*
+Makefile
+CMakeCache.txt
+cmake_install.cmake
+*.make
+CMakeFiles
