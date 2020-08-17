@@ -52,10 +52,21 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "shared_mutex": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "cstring": "cpp",
+        "future": "cpp",
+        "iomanip": "cpp",
+        "cinttypes": "cpp"
     },
     "C_Cpp.default.forcedInclude": [
         "log.h"
     ],
-    "C_Cpp.default.includePath": ["../utils"]
+    "C_Cpp.default.includePath": [
+        "../utils"
+    ],
+    "launch": {
+    "inputs": [],
+        "configurations": [],
+        "compounds": []
+    }
 }

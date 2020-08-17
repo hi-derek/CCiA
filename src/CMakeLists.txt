@@ -1,7 +1,7 @@
 add_subdirectory(utils)
 
 include_directories(${CMAKE_CURRENT_LIST_DIR}/utils)
-add_compile_options(-include log.h)
+add_compile_options(-O3 -include log.h)
 link_directories(${CMAKE_ARCHIVE_DIR} ${CMAKE_LIBRARY_DIR} )
 link_libraries(-lutils)
 
