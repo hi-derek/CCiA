@@ -13,7 +13,7 @@ project(CCiA CXX)
 #   message(FATAL_ERROR "${CMAKE_CXX_COMPILER} has no C++14 support")
 # endif()
 
-set(CMAKE_CXX_FLAGS "-std=c++11")
+set(CMAKE_CXX_FLAGS "-std=c++2a")
 
 set(CXX_FLAGS
  -g
@@ -45,5 +45,16 @@ find_package(Boost COMPONENTS system thread REQUIRED)
 
 include_directories(${Boost_INCLUDE_DIRS})
 include_directories("${PROJECT_SOURCE_DIR}/src/")
+
+
+#################################################################
+set(CMAKE_OUTPUT_ROOT_DIR ${CMAKE_CURRENT_LIST_DIR}) 
+set(CMAKE_BINARY_DIR ${CMAKE_OUTPUT_ROOT_DIR}/bin) 
+set(CMAKE_ARCHIVE_DIR ${CMAKE_OUTPUT_ROOT_DIR}/lib) 
+set(CMAKE_LIBRARY_DIR ${CMAKE_OUTPUT_ROOT_DIR}/lib) 
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_ARCHIVE_DIR}) 
+
 
 add_subdirectory(src/)

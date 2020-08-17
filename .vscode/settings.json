@@ -53,5 +53,9 @@
         "typeinfo": "cpp",
         "shared_mutex": "cpp",
         "map": "cpp"
-    }
+    },
+    "C_Cpp.default.forcedInclude": [
+        "log.h"
+    ],
+    "C_Cpp.default.includePath": ["../utils"]
 }
